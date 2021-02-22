@@ -56,7 +56,7 @@ public class CardDeliveryTest {
         $$(".menu-item").find(exactText("Москва")).click();
         $("[data-test-id='date'] .input__icon").click();
         $(".calendar__arrow[ data-step='1']").click();
-        $(".calendar__layout .calendar__row .calendar__day[data-day='1614884400000']").click();
+        $$(".calendar__layout .calendar__row .calendar__day").find(exactText("5")).click();
         $("[data-test-id=name] .input__control").setValue("Балахонцев Андрей");
         $("[data-test-id=phone] .input__control").setValue("+78005553535");
         $("[data-test-id=agreement] .checkbox__box").click();
